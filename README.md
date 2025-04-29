@@ -1,4 +1,4 @@
-# cheker
+# checker
 Hotmail Checker
 
  Возможности:
