@@ -1,49 +1,64 @@
-# checker
-Hotmail Checker
+# 📌 Facebook Checker
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
- Возможности:
-✅ Поддержка 500 потоков — высокая скорость проверки
-📂 Загрузка Combo-файла (email:password)
-🔐 Проверка только @hotmail.com аккаунтов через IMAP
-🧩 Поддержка SOCKS5-прокси (proxies.txt)
-📊 Живая статистика в GUI:
-  • HITS — валидные аккаунты
-  • ERRORS — ошибки (блокировки, тайм-ауты)
-  • CHECKED — сколько аккаунтов обработано
-📜 Лог результатов в окне + сохранение в valid.txt
-🚫 Нельзя растягивать окно — дизайн остаётся аккуратным
-🎨 Темная тема, приятный современный интерфейс
+---
 
-📁 Как использовать:
-Установи зависимости (если нужно):
+## 🇷🇺 Описание
 
-bash
+Графическая программа для проверки email:password на наличие регистрации в Facebook через форму восстановления пароля.
 
-pip install pysocks
-Подготовь файлы:
+### 🔧 Возможности:
 
-combo.txt — список email:password (только @hotmail.com)
+- ✅ Реальная проверка через Facebook Recovery
+- ⚡   быстрая и лёгкая
+- 🔀 Поддержка прокси (HTTPS)
+- 🚀 Многопоточность — высокая скорость
+- 💾 Сохранение GOOD результатов в `good.txt`
+- 📊 Отображение статистики: GOOD | BAD | ERROR
+- 🎛 Удобный и понятный интерфейс
 
-proxies.txt — список SOCKS5-прокси в формате ip:port (опционально)
+### 📁 Инструкция:
 
-Запусти программу:
+1. Запустите программу.
+2. Нажмите «Загрузить базу» и выберите файл `.txt` с email:pass.
+3. (Опционально) Нажмите «Загрузить прокси» и выберите прокси.
+4. Нажмите «Старт» — проверка начнётся.
+5. Результаты отобразятся в окне, GOOD — сохраняются в `good.txt`.
 
-bash
+---
 
-python hotmail_checker_gui.py
-Нажми кнопку "📁 Выбрать Combo файл" и выбери свой .txt
-✅ Проверка начнётся автоматически
+## 🇬🇧 Description
 
-📌 Примечание:
-Программа использует imaplib.IMAP4_SSL и подключается к imap-mail.outlook.com
+A GUI tool to check if email:password combos are registered on Facebook via the official password recovery system.
 
-Прокси подключаются автоматически, ротация после каждой попытки
+### 🔧 Features:
 
-HITS сохраняются в файл valid.txt
+- ✅ Real validation via Facebook Recovery
+- ⚡  fast and lightweight
+- 🔀 Proxy support (HTTPS)
+- 🕵️ Randomized User-Agent for each request
+- 🚀 Multithreading — fast performance
+- 💾 Saves GOOD results to `good.txt`
+- 📊 Real-time stats: GOOD | BAD | ERROR
+- 🎛 Simple user interface
 
-🛠 Требования:
-Python 3.7+
+### 📁 How to Use:
 
-pysocks (pip install pysocks)
+1. Run the script.
+2. Click "Load Combo" and choose a `.txt` file with email:pass combos.
+3. (Optional) Load a proxy file.
+4. Click "Start" to begin checking.
+5. Results will show in the GUI. GOOD combos are saved to `good.txt`.
 
+---
 
+## 📜 License
+
+MIT License
+
+---
+
+## 👤 Developer
+
+Created by [coder5544]
